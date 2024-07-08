@@ -6,7 +6,7 @@ import aboutImage from "../assets/vallee_montagne.webp";
 
 const About = () => {
   return (
-    <div>
+    <div >
       <Header />
       <Banner imageUrl={aboutImage} />
       <Footer />
