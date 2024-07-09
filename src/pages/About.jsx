@@ -1,14 +1,22 @@
 import React from "react";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
 import Banner from "../components/Banner";
+import Collapse from "../components/Collapse";
+import Footer from "../components/Footer";
 import aboutImage from "../assets/vallee_montagne.webp";
+import collapseData from "../datas/collapseData.json";
+import "../styles/Collapse.scss";
 
 const About = () => {
   return (
-    <div >
+    <div>
       <Header />
       <Banner imageUrl={aboutImage} />
+      <div className="collapse-container">
+        {collapseData.map((item, index) => (
+          <Collapse key={index} title={item.title} content={item.content} />
+        ))}
+      </div>
       <Footer />
     </div>
   );

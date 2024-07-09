@@ -1,0 +1,48 @@
+.collapse-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .collapse {
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #ff6060;
+    border-radius: 5px;
+    overflow: hidden;
+  
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #ff6060;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+    }
+  
+    &-title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  
+    &-icon {
+      transition: transform 0.3s ease;
+      width: 20px;
+      height: 20px;
+      transform: rotate(0deg);
+    }
+  
+    &-icon.open {
+      transform: rotate(-180deg);
+    }
+  
+    &-content {
+      padding: 10px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+  }
+  
