@@ -5,6 +5,15 @@
     max-width: 1000px;
     margin: 0 auto;
   }
+  .collapse-containere {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .collapse-containere .collapse {
+    flex: 1;
+  }
   
   .collapse {
     width: 100%;

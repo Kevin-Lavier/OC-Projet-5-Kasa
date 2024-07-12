@@ -1,0 +1,48 @@
+.carrousel {
+  position: relative;
+  width: 1240px;
+  height: 415px;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.left-arrow, .right-arrow {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 100px;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.left-arrow {
+  left: 40px;
+}
+
+.right-arrow {
+  right: 40px;
+}
+
+.image-counter-container {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-counter {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  padding: 5px 10px;
+}

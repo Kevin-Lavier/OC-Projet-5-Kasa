@@ -142,14 +142,20 @@ body {
     padding: 0;
   }
    
-  .main {
-    max-width: 1240px;
-    margin: 40px auto;
-   }
+  
   
   a {
     color: inherit;
     text-decoration: none;
   }
   
-  
+  .carrousel-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+  }
+
+  .details-wrapper{
+      max-width: 1240px;
+      margin: 40px auto;
+  }

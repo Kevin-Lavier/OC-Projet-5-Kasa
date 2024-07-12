@@ -1,0 +1,79 @@
+
+
+   .details-name h1{
+    color: #FF6060;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 10px;
+   }
+   
+   .details-name p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+   }
+  
+  .details-location {
+    font-size: 1.2em;
+    color: grey;
+    margin-bottom: 20px;
+  }
+  
+  .details-host {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .details-host-picture {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .details-host-name {
+    font-size: 1.2em;
+  }
+  
+  .details-tags {
+    margin-bottom: 20px;
+  }
+  
+  .details-tag {
+    background-color: #ff5a5f;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .details-description {
+    margin-bottom: 20px;
+  }
+  
+  .details-equipments {
+    margin-top: 20px;
+  }
+  
+  .details-equipments h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .details-equipments ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .details-equipments li {
+    background-color: #f7f7f7;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+  
+
