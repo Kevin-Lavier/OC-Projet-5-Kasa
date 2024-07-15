@@ -11,7 +11,7 @@ const Property = () => {
   const { id } = useParams();
   const [rental, setRental] = useState(null);
   const [loading, setLoading] = useState(true);
-
+  
   useEffect(() => {
     const foundRental = logements.find((logement) => logement.id === id);
     setRental(foundRental);
@@ -29,12 +29,16 @@ const Property = () => {
   return (
     <div>
       <Header />
-      <div className="carrousel-wrapper">
-        <Carrousel images={rental.pictures} />
-      </div>
-      <div className="details-wrapper">
-        <Details rental={rental} />
-      </div>
+      <main>
+        <section>
+          <article className="carrousel-wrapper">
+            <Carrousel images={rental.pictures} />
+          </article>
+          <article className="details-wrapper">
+            <Details rental={rental} />
+          </article>
+        </section>
+      </main>
       <Footer />
     </div>
   );

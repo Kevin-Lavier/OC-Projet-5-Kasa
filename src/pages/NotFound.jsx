@@ -8,11 +8,13 @@ const NotFound = () => {
   return (
     <div>
        <Header />
-      <div className="flex-column">
+       <main>
+      <section className="flex-column">
         <p className="large-text">404</p>
         <p className="medium-text">Oups! La page que vous demandez n'existe pas.</p>
         <NavLink to="/" className="nav-link">Retourner sur la page d’accueil</NavLink>
-      </div>
+      </section>
+      </main>
       <Footer />
     </div>
   );

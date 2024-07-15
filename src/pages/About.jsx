@@ -11,12 +11,16 @@ const About = () => {
   return (
     <div>
       <Header />
+      <main>
+        <section>
       <Banner imageUrl={aboutImage} />
-      <div className="collapse-container">
+      </section>
+      <section className="collapse-container">
         {collapseData.map((item, index) => (
           <Collapse key={index} title={item.title} content={item.content} />
         ))}
-      </div>
+      </section>
+      </main>
       <Footer />
     </div>
   );

@@ -5,18 +5,21 @@ import Banner from "../components/Banner";
 import Gallery from "../components/Gallery";
 import homeImage from "../assets/bord_de_mer.webp";
 
+
 const Home = () => {
   return (
     <div>
-      <div className="main">
-        <Header />
+      <Header />
+      <main>
         <Banner
           isHome={true}
           text="Chez vous, partout et ailleurs"
           imageUrl={homeImage}
         />
-        <Gallery />
-      </div>
+        <section>
+          <Gallery />
+        </section>
+      </main>
       <Footer />
     </div>
   );
