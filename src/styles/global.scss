@@ -135,27 +135,25 @@ table {
 
 /* END RESET CSS*/
 
-body {
+#root {
     font-family: Montserrat, sans-serif;
-    width: 100;
-    margin: 0 auto;
-    padding: 0;
+    display: flex;
   }
    
-  
   
   a {
     color: inherit;
     text-decoration: none;
   }
   
-  .carrousel-wrapper {
-    display: flex;
-    justify-content: center;
-    margin: 50px;
-  }
+  
 
-  .details-wrapper{
-      max-width: 1240px;
-      margin: 40px auto;
-  }
+
+  // @media all and (min-width: 768px) and (max-width: 1024px)
+
+  // @media all and (max-width: 767.98px)
+
+
+
+
+
