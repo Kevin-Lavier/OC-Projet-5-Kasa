@@ -2,32 +2,19 @@ import React from "react";
 import "../styles/Details.scss";
 import Collapse from "../components/Collapse";
 import Rating from "../components/Rating";
+import Tags from "../components/Tags";
+import Profil from "../components/Profil";
+import Title from "../components/Title";
 
 
 const Details = ({ rental }) => {
   return (
     <div>
-      <div className="details-name">
-        <h1>{rental.title}</h1>
-        <p>{rental.location}</p>
-      </div>
-      <div className="details-host">
-        <img
-          src={rental.host.picture}
-          alt={rental.host.name}
-          className="details-host-picture"
-        />
-        <p className="details-host-name">{rental.host.name}</p>
-      </div>
-      <div className="details-tags">
-        {rental.tags.map((tag, index) => (
-          <span key={index} className="details-tag">
-            {tag}
-          </span>
-        ))}
-      </div>
+      <Title title={rental.title} location={rental.location} />
+      <Profil host={rental.host} />
+      <Tags tags={rental.tags} />
       <Rating rating={rental.rating} />
-      <div className="collapse-containere">
+      <div>
         <Collapse title="Description" content={rental.description} />
         <Collapse
           title="Equipements"
