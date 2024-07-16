@@ -136,19 +136,23 @@ table {
 /* END RESET CSS*/
 
 #root {
-    font-family: Montserrat, sans-serif;
-    display: flex;
-  }
-   
-  
+  font-family: Montserrat, sans-serif;
   a {
     color: inherit;
-    text-decoration: none;
   }
-  
-  
+}
 
+.home-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
+@mixin flex-center {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
   // @media all and (min-width: 768px) and (max-width: 1024px)
 
   // @media all and (max-width: 767.98px)

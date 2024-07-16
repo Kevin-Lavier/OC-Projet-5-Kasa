@@ -1,5 +1,5 @@
 .banner {
-  width: 1240px;
+  max-width: 1240px;
   height: 223px;
   border-radius: 25px;
   position: relative;
@@ -28,9 +28,9 @@
 
     h1 {
       color: white;
-      font-size: 48px;
       font-weight: bold;
       z-index: 1;
+      font-size: clamp(1.5rem, 0.9448rem + 2.6519vw, 3rem);
     }
   }
 }

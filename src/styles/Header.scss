@@ -1,39 +1,30 @@
+@import 'global';
+
+
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1240px;
-  margin: 30px auto;
-}
+  @include flex-center;
+  padding: 20px;
 
-.header-nav {
-  display: flex;
-}
+  .header-nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
 
-.header-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
+    li {
+      a {
+        font-size: 24px;
+        font-weight: 500;
+        color: inherit; // Ensure it inherits the correct color
+        text-decoration: none; // Start with no text decoration
 
-.header-nav li {
-  margin-left: 20px;
-}
+        &:hover {
+          text-decoration: underline;
+        }
 
-.header-nav a {
-  text-decoration: none;
-  color: inherit;
-  font-size: 24px;
-  font-weight: 500;
-  padding-bottom: 5px;
-  border-bottom: 2px solid transparent;
-}
-
-.header-nav a:hover {
-  text-decoration: underline;
-}
-
-.header-nav a.active {
-  text-decoration: underline;
+        &.active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }

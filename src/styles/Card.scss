@@ -1,33 +1,36 @@
 .card {
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 20px;
-    width: 340px;
-    height: 340px;
-    cursor: pointer;
-  
-    .card-image-container {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px; /* Adjust margin to fit the gap and container */
+  width: calc(30% - 20px); /* 3 cards per row minus margin */
+  padding-bottom: calc(33.333% - 20px); /* Maintain aspect ratio */
+  cursor: pointer;
+
+  .card-image-container {
       position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
       height: 100%;
       z-index: 1;
-  
+
       .card-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
       }
-  
+
       .overlay {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(180deg, rgba(0,0,0,0) 27%, rgba(0,0,0,0.32376278147977944) 75%, rgba(0,0,0,0.42180199716605393) 100%);
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(180deg, rgba(0,0,0,0) 27%, rgba(0,0,0,0.32376278147977944) 75%, rgba(0,0,0,0.42180199716605393) 100%);
       }
-    }
-  
-    .card-title {
+  }
+
+  .card-title {
       position: absolute;
       bottom: 10px;
       z-index: 2;
@@ -35,6 +38,8 @@
       margin: 0;
       padding: 10px;
       color: white;
-    }
   }
-  
+ 
+}
+
+
