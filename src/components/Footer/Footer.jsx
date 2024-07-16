@@ -1,5 +1,5 @@
-import "../styles/Footer.scss";
-import logo from "../assets/logo_kasa_white.svg";
+import "./Footer.scss";
+import logo from "../../assets/logo_kasa_white.svg";
 
 const Footer = () => (
   <footer className="footer">

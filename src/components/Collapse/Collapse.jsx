@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../styles/Collapse.scss";
-import arrow from "../assets/up_arrow.svg";
+import "./Collapse.scss";
+import arrow from "../../assets/up_arrow.svg";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import "../styles/NotFound.scss";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import "./NotFound.scss";
 
 const NotFound = () => {
   return (

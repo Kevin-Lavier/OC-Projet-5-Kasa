@@ -1,11 +1,11 @@
 import React from "react";
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import Collapse from "../components/Collapse";
-import Footer from "../components/Footer";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Banner from "../components/Banner/Banner";
+import Collapse from "../components/Collapse/Collapse";
 import aboutImage from "../assets/vallee_montagne.webp";
 import collapseData from "../datas/collapseData.json";
-import "../styles/Collapse.scss";
+import "../components/Collapse/Collapse.scss";
 
 const About = () => {
   return (

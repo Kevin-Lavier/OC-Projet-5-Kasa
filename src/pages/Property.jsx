@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import logements from '../datas/logements.json';
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Carrousel from "../components/Carrousel";
-import Details from "../components/Details";
-import NotFound from './NotFound';
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import Carrousel from "../components/Carrousel/Carrousel";
+import Details from "../components/Details/Details";
+import NotFound from './NotFound/NotFound';
 
 const Property = () => {
   const { id } = useParams();

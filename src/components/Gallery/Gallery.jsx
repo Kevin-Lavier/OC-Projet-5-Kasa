@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Card from "./Card";
-import "../styles/Gallery.scss";
-import data from "../datas/logements.json";
+import Card from "./Card/Card";
+import "./Gallery.scss";
+import data from "../../datas/logements.json";
 
 const Gallery = () => {
   const [logements, setLogements] = useState([]);

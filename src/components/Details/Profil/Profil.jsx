@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Profil.scss";
+import "./Profil.scss";
 
 const Profil = ({ host }) => {
   return (

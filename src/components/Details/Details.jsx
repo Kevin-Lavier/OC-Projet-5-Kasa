@@ -1,10 +1,10 @@
-import React from "react";
-import "../styles/Details.scss";
-import Collapse from "../components/Collapse";
-import Rating from "../components/Rating";
-import Tags from "../components/Tags";
-import Profil from "../components/Profil";
-import Title from "../components/Title";
+import React from 'react';
+import Rating from './Rating/Rating';
+import Tags from './Tags/Tags';
+import Profil from './Profil/Profil';
+import Title from './Title/Title';
+import './Details.scss';
+import Collapse from "../Collapse/Collapse";
 
 
 const Details = ({ rental }) => {
