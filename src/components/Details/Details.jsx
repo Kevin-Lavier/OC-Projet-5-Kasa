@@ -6,18 +6,24 @@ import Title from './Title/Title';
 import './Details.scss';
 import Collapse from "../Collapse/Collapse";
 
-
 const Details = ({ rental }) => {
   return (
-    <div>
-      <Title title={rental.title} location={rental.location} />
-      <Profil host={rental.host} />
-      <Tags tags={rental.tags} />
-      <Rating rating={rental.rating} />
-      <div>
-        <Collapse title="Description" content={rental.description} />
+    <div className="details">
+      <div className="details-header">
+        <div className="details-title-profil">
+          <Title title={rental.title} location={rental.location} />
+          <Profil host={rental.host} />
+        </div>
+        <div className="details-tags-rating">
+          <Tags tags={rental.tags} />
+          <Rating rating={rental.rating} />
+        </div>
+      </div>
+      <div className="details-collapse">
+        <Collapse key="description" title="Description" content={rental.description} />
         <Collapse
-          title="Equipements"
+          key="equipments"
+          title="Équipements"
           content={
             <ul>
               {rental.equipments.map((equipment, index) => (

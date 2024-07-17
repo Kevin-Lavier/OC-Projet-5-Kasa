@@ -7,6 +7,7 @@ import "./NotFound.scss";
 const NotFound = () => {
   return (
     <div>
+      <div className="global-container">
        <Header />
        <main>
       <section className="flex-column">
@@ -15,6 +16,7 @@ const NotFound = () => {
         <NavLink to="/" className="nav-link">Retourner sur la page d’accueil</NavLink>
       </section>
       </main>
+      </div>
       <Footer />
     </div>
   );

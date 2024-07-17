@@ -4,16 +4,13 @@
   align-items: center;
   max-width: 1000px;
   margin: 0 auto;
+}
 
-  &-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-
-    .collapse {
-      flex: 1;
-    }
-  }
+.collapse-content-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
 }
 
 .collapse {

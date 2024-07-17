@@ -1,12 +1,14 @@
 .carrousel {
   position: relative;
-  width: 1240px;
+  max-width: 1240px;
   height: 415px;
   border-radius: 25px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 30px auto;
+  width: 100%;
 }
 
 .carrousel-image {

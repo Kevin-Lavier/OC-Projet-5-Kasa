@@ -9,7 +9,7 @@ import "../styles/global.scss";
 const Home = () => {
   return (
     <div>
-      <div className="home-container">
+      <div className="global-container">
         <Header />
         <main>
           <Banner

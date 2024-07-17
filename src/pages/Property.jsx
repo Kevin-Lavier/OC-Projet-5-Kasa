@@ -28,17 +28,19 @@ const Property = () => {
 
   return (
     <div>
+      <div className="global-container">
       <Header />
       <main>
         <section>
-          <article className="carrousel-wrapper">
+          <article>
             <Carrousel images={rental.pictures} />
           </article>
-          <article className="details-wrapper">
+          <article>
             <Details rental={rental} />
           </article>
         </section>
       </main>
+      </div>
       <Footer />
     </div>
   );

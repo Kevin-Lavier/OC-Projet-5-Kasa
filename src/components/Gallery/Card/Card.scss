@@ -2,9 +2,9 @@
   position: relative;
   border-radius: 10px;
   overflow: hidden;
-  margin: 10px; /* Adjust margin to fit the gap and container */
-  width: calc(30% - 20px); /* 3 cards per row minus margin */
-  padding-bottom: calc(33.333% - 20px); /* Maintain aspect ratio */
+  margin: 10px;
+  width: calc(30% - 20px);
+  padding-bottom: calc(33.333% - 20px);
   cursor: pointer;
 
   .card-image-container {

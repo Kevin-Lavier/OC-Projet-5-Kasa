@@ -6,10 +6,13 @@ import Collapse from "../components/Collapse/Collapse";
 import aboutImage from "../assets/vallee_montagne.webp";
 import collapseData from "../datas/collapseData.json";
 import "../components/Collapse/Collapse.scss";
+import "../styles/global.scss";
+
 
 const About = () => {
   return (
     <div>
+    <div className="global-container">
       <Header />
       <main>
         <section>
@@ -21,6 +24,7 @@ const About = () => {
         ))}
       </section>
       </main>
+      </div>
       <Footer />
     </div>
   );
