@@ -1,12 +1,11 @@
 .collapse-wrapper {
-  margin-bottom: 20px; // Ensure spacing between collapses
+  margin-bottom: 20px;
+  flex: 1; // Ensuring equal width in a flex container
 }
 
 .collapse {
   width: 100%;
-  margin: 20px 0;
-  border: 1px solid #ff6060;
-  border-radius: 5px;
+  margin: 0; // Remove margin to avoid extra space
   overflow: hidden;
 
   &-header {

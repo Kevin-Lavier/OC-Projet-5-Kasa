@@ -9,7 +9,7 @@ const Collapse = ({ title, content }) => {
     setIsOpen(!isOpen);
   };
 
- return (
+  return (
     <div className="collapse-wrapper">
       <div className="collapse">
         <div className="collapse-header" onClick={toggleCollapse}>

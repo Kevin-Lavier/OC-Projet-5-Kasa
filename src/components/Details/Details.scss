@@ -22,11 +22,11 @@
 
 .details-collapse {
   display: flex;
-  justify-content: space-between;
   gap: 20px;
   margin-top: 20px;
-}
 
-.details-collapse .collapse {
-  flex: 1;
+  // Ensure collapses have equal width
+  .collapse-wrapper {
+    flex: 1;
+  }
 }
