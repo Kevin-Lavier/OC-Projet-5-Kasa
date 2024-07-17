@@ -19,7 +19,9 @@ const Collapse = ({ title, content }) => {
           className={`collapse-icon ${isOpen ? "open" : ""}`}
         />
       </div>
-      {isOpen && <div className="collapse-content">{content}</div>}
+      <div className={`collapse-content ${isOpen ? "open" : ""}`}>
+        <div className="collapse-content-inner">{content}</div>
+      </div>
     </div>
   );
 };
