@@ -6,16 +6,21 @@ import Title from './Title/Title';
 import './Details.scss';
 import Collapse from "../Collapse/Collapse";
 
+
 const Details = ({ rental }) => {
   return (
     <div className="details">
       <div className="details-header">
         <div className="details-title-profil">
           <Title title={rental.title} location={rental.location} />
-          <Profil host={rental.host} />
+          <Profil host={rental.host} className="profil" /> {/* Added className here */}
         </div>
         <div className="details-tags-rating">
           <Tags tags={rental.tags} />
+          <Rating rating={rental.rating} />
+        </div>
+        <div className="details-profil-rating">
+          <Profil host={rental.host} />
           <Rating rating={rental.rating} />
         </div>
       </div>
@@ -36,5 +41,6 @@ const Details = ({ rental }) => {
     </div>
   );
 };
+
 
 export default Details;

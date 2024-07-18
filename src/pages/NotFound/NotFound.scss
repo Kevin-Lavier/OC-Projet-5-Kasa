@@ -1,32 +1,49 @@
 .flex-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  
-    p {
-      color: #FF6060;
-      margin-top: 100px;
-    }
-  
-    .large-text {
-      font-size: 288px;
-      font-weight: 700;
-    }
-  
-    .medium-text {
-      font-size: 36px;
-      font-weight: 500;
-    }
-  
-    .nav-link {
-        font-size: 18px;
-      text-decoration: none;
-      font-weight:500;
-      margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; // Ensure text is centered within the container
 
-  
-      &:hover {
-        text-decoration: underline;
-      }
+  p {
+    color: #FF6060;
+    margin-top: 100px;
+
+    @media (max-width: 768px) {
+      margin-top: 50px; // Adjust margin for smaller screens
     }
   }
+
+  .large-text {
+    font-size: 288px;
+    font-weight: 700;
+
+    @media (max-width: 768px) {
+      font-size: 96px; // Adjust font size for smaller screens
+    }
+  }
+
+  .medium-text {
+    font-size: 36px;
+    font-weight: 500;
+
+    @media (max-width: 768px) {
+      font-size: 18px; // Adjust font size for smaller screens
+    }
+  }
+
+  .nav-link {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 100px;
+
+    @media (max-width: 768px) {
+      font-size: 14px; // Adjust font size for smaller screens
+      margin: 50px; // Adjust margin for smaller screens
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

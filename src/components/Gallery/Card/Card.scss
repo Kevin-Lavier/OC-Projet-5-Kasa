@@ -7,6 +7,14 @@
   padding-bottom: calc(33.333% - 20px);
   cursor: pointer;
 
+
+  @media (max-width: 768px) {
+    width: 100%; // Card takes full width of the container
+    padding-bottom: 100%; // Makes the card square by setting height equal to width
+    margin: 10px 0;
+  }
+
+
   .card-image-container {
       position: absolute;
       top: 0;

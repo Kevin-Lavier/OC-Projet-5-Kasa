@@ -20,6 +20,28 @@
   align-items: center;
 }
 
+.details-profil-rating {
+  display: none; // Hide by default
+}
+
+@media (max-width: 768px) {
+  .details-title-profil {
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .details-tags-rating {
+    display: none; // Hide when screen width is <= 768px
+  }
+
+  .details-profil-rating {
+    display: flex; // Show when screen width is <= 768px
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
 .details-collapse {
   display: flex;
   gap: 20px;
@@ -28,5 +50,9 @@
   // Ensure collapses have equal width
   .collapse-wrapper {
     flex: 1;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 }

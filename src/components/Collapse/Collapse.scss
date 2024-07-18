@@ -3,10 +3,24 @@
   flex: 1; // Ensuring equal width in a flex container
 }
 
+.collapse-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center; // Center the collapses horizontally
+  width: 80%;
+  margin: 0 auto; 
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    width: 100%;
+  }
+}
+
 .collapse {
   width: 100%;
   margin: 0; // Remove margin to avoid extra space
   overflow: hidden;
+  border-radius: 10px;
+  
 
   &-header {
     display: flex;
