@@ -1,11 +1,10 @@
-import React from 'react';
-import Rating from './Rating/Rating';
-import Tags from './Tags/Tags';
-import Profil from './Profil/Profil';
-import Title from './Title/Title';
-import './Details.scss';
+import React from "react";
+import Rating from "./Rating/Rating";
+import Tags from "./Tags/Tags";
+import Profil from "./Profil/Profil";
+import Title from "./Title/Title";
+import "./Details.scss";
 import Collapse from "../Collapse/Collapse";
-
 
 const Details = ({ rental }) => {
   return (
@@ -13,19 +12,19 @@ const Details = ({ rental }) => {
       <div className="details-header">
         <div className="details-title-profil">
           <Title title={rental.title} location={rental.location} />
-          <Profil host={rental.host} className="profil" /> {/* Added className here */}
+          <Tags tags={rental.tags} />
         </div>
         <div className="details-tags-rating">
-          <Tags tags={rental.tags} />
-          <Rating rating={rental.rating} />
-        </div>
-        <div className="details-profil-rating">
-          <Profil host={rental.host} />
+          <Profil host={rental.host}/>
           <Rating rating={rental.rating} />
         </div>
       </div>
       <div className="details-collapse">
-        <Collapse key="description" title="Description" content={rental.description} />
+        <Collapse
+          key="description"
+          title="Description"
+          content={rental.description}
+        />
         <Collapse
           key="equipments"
           title="Équipements"
@@ -41,6 +40,5 @@ const Details = ({ rental }) => {
     </div>
   );
 };
-
 
 export default Details;
