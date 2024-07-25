@@ -1,7 +1,7 @@
-@import '../../styles/global';
+@import '../../styles/mixins';
 
 .header {
-  @include flex-center;
+  @include flex-center-space-between;
   padding: 20px;
 
   img {

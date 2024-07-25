@@ -1,5 +1,6 @@
+@import "../../styles/mixins.scss";
+
 .details {
-  padding: 20px;
 }
 
 .details-header {
@@ -9,15 +10,14 @@
 }
 
 .details-title-profil {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flex-column-space-between;
   align-items: flex-start;
+  width: 70%;
+  
 }
 
 .details-tags-rating {
-  display: flex;
-  flex-direction: column;
+  @include flex-column-space-between;
   align-items: flex-end;
 }
 
@@ -27,17 +27,9 @@
   }
 
   .details-tags-rating {
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
-    justify-content: space-between;
-  }
-
-  .details-tags-rating > *:first-child {
-    order: 2; /* Profil sera à droite */
-  }
-
-  .details-tags-rating > *:last-child {
-    order: 1; /* Rating sera à gauche */
+    justify-content:space-between;
   }
 }
 
@@ -46,6 +38,22 @@
   gap: 20px;
   margin-top: 20px;
 
+  // Ensure collapses have equal width
+  .collapse-wrapper {
+    flex: 1;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.details-collapse {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+
+  // Ensure collapses have equal width
   .collapse-wrapper {
     flex: 1;
   }

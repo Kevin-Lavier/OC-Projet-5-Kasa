@@ -1,9 +1,19 @@
 .rating {
   display: flex;
   gap: 10px;
+  margin-top: 20px;
+
 }
 
 .star {
   width: 24px;
   height: 24px;
+}
+
+@media (max-width: 768px) {
+  .star{
+    width: 20px;
+    height: 20px;
+margin-bottom: 20px;
+  }
 }

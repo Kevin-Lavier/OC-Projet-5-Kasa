@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -5,7 +7,7 @@
   text-align: center; // Ensure text is centered within the container
 
   p {
-    color: #FF6060;
+    color: $primary-color;
     margin-top: 100px;
 
     @media (max-width: 768px) {

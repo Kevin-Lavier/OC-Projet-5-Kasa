@@ -1,19 +1,18 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
 .banner {
   max-width: 1240px;
   height: 223px;
   border-radius: 25px;
-  position: relative;
-  overflow: hidden;
+  @include hidden-overflow-relative;
   background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
+  @include flex-center;
   margin: 30px auto;
 
   .overlay {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    @include full-size;
     background: rgba(0, 0, 0, 0.3);
   }
 
@@ -25,7 +24,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 
     h1 {
-      color: white;
+      color: $tertiary-color;
       font-weight: bold;
       z-index: 1;
       font-size: 46px;
@@ -36,10 +35,11 @@
     margin: 0;
     height: 111px;
 
-
     &.home {
+      box-shadow: none;
+
       h1 {
-        font-size: 24px; // Set font size for smaller screens
+        font-size: 24px;
         font-weight: 500;
         margin-left: 15px;
       }

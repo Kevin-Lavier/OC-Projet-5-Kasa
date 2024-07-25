@@ -1,3 +1,6 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
 .collapse-wrapper {
   margin-bottom: 20px;
   flex: 1; // Ensuring equal width in a flex container
@@ -23,11 +26,9 @@
   
 
   &-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ff6060;
-    color: white;
+    @include flex-center-space-between;
+    background-color: $primary-color;
+    color: $tertiary-color;
     padding: 10px;
     cursor: pointer;
   }

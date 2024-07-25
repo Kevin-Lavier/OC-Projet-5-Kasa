@@ -1,53 +1,52 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
 .card {
-  position: relative;
+  @include hidden-overflow-relative;
   border-radius: 10px;
-  overflow: hidden;
   margin: 10px;
   width: calc(30% - 20px);
   padding-bottom: calc(33.333% - 20px);
   cursor: pointer;
 
-
   @media (max-width: 768px) {
-    width: 100%; // Card takes full width of the container
-    padding-bottom: 100%; // Makes the card square by setting height equal to width
+    width: 100%;
+    padding-bottom: 100%;
     margin: 10px 0;
   }
 
-
   .card-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include full-size;
+    z-index: 1;
+
+    .card-image {
+      @include full-size;
+      object-fit: cover;
+    }
+
+    .overlay {
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-
-      .card-image {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-      }
-
-      .overlay {
-          position: absolute;
-          bottom: 0;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(180deg, rgba(0,0,0,0) 27%, rgba(0,0,0,0.32376278147977944) 75%, rgba(0,0,0,0.42180199716605393) 100%);
-      }
+      bottom: 0;
+      @include full-size;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 27%,
+        rgba(0, 0, 0, 0.32376278147977944) 75%,
+        rgba(0, 0, 0, 0.42180199716605393) 100%
+      );
+    }
   }
 
   .card-title {
-      position: absolute;
-      bottom: 10px;
-      z-index: 2;
-      font-size: 18px;
-      margin: 0;
-      padding: 10px;
-      color: white;
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    color: $tertiary-color;
   }
- 
 }
-
-
