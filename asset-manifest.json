@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/OC-Projet-5-Kasa/static/css/main.c38faf06.css",
+    "main.js": "/OC-Projet-5-Kasa/static/js/main.4f824e70.js",
+    "static/media/bord_de_mer.webp": "/OC-Projet-5-Kasa/static/media/bord_de_mer.8190022d6ef4dde05ade.webp",
+    "static/media/vallee_montagne.webp": "/OC-Projet-5-Kasa/static/media/vallee_montagne.283f072733b6afd99174.webp",
+    "static/media/logo_kasa_black.svg": "/OC-Projet-5-Kasa/static/media/logo_kasa_black.69a3df082e3c5a974ce0abfe5dc4be4e.svg",
+    "static/media/logo_kasa_white.svg": "/OC-Projet-5-Kasa/static/media/logo_kasa_white.49d6c6c773443de2f700868f876ad8db.svg",
+    "static/media/grey_star.svg": "/OC-Projet-5-Kasa/static/media/grey_star.68fd8a1ead5375bd59bb6ae0b633ffd3.svg",
+    "static/media/red_star.svg": "/OC-Projet-5-Kasa/static/media/red_star.30b8963e66a47777ef47296f505567be.svg",
+    "index.html": "/OC-Projet-5-Kasa/index.html",
+    "static/media/up_arrow.svg": "/OC-Projet-5-Kasa/static/media/up_arrow.574227c1ca3bbfe1a74a469a82b713bc.svg",
+    "main.c38faf06.css.map": "/OC-Projet-5-Kasa/static/css/main.c38faf06.css.map",
+    "main.4f824e70.js.map": "/OC-Projet-5-Kasa/static/js/main.4f824e70.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c38faf06.css",
+    "static/js/main.4f824e70.js"
+  ]
+}
